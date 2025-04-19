@@ -54,6 +54,21 @@
       fbq("init", "604977215878637");
       fbq("track", "PageView");
     </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const joinBtn = document.querySelector('a[href="https://t.me/+0MLD6daxooA5NWU1"]');
+    
+        if (joinBtn) {
+          joinBtn.addEventListener("click", function () {
+            fbq("track", "Subscribe", {
+              value: 0.00,
+              currency: "INR"
+            });
+          });
+        }
+      });
+    </script>
+    
     <noscript
       ><img
         height="1"
